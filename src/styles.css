@@ -1,0 +1,120 @@
+body {
+    background: #222;
+    color: #f8f8f2;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #803e3e;
+    color: #fff;
+    padding: 0.2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px #0004;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.game-container {
+    display: flex;
+    max-width: 95vw;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.map-area {
+    flex: 2;
+    background: #3e4780;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px #0002;
+}
+
+#game-map {
+    background: #fff;
+    border-radius: 8px;
+    min-height: 65vh;
+    min-width: 60vw;
+    margin-top: 1rem;
+}
+
+.party-sidebar {
+    flex: 1;
+    background: #787a8a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px #0002;
+    min-width: 20vw;
+}
+
+#party-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 6vh;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    color: black;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    height: 12vh;
+}
+
+.member-sprite {
+    width: 6vh;
+    height: 6vh;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.member-name {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.member-level {
+    color: #888;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    .game-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .party-sidebar {
+        min-width: unset;
+    }
+
+    footer {
+        position: static;
+    }
+}
