@@ -26,3 +26,9 @@ for i in local_names:
     index = other_names.index(i)+1
     order.append(index)
 print(order)
+# mons = list( dfevo["Pokemon"].str.lower())
+# s = set()
+# for mon in mons:
+#     if mon in s:
+#         print(mon)
+#     s.add(mon)

@@ -667,7 +667,7 @@ dex,name,type1,type2,ability1,ability2,hidden_ability,hp,attack,defense,sp_atk,s
 666,Vivillon,Bug,Flying,Shield Dust,Compound Eyes,Friend Guard,80,52,50,90,50,89,411,45,206
 667,Litleo,Fire,Normal,Rivalry,Unnerve,Moxie,62,50,58,73,54,72,369,220,74
 668,Pyroar,Fire,Normal,Rivalry,Unnerve,Moxie,86,68,72,109,66,106,507,65,177
-669,Flabébé,Fairy,,Flower Veil,Symbiosis,,44,38,39,61,79,42,303,225,61
+669,Flabebe,Fairy,,Flower Veil,Symbiosis,,44,38,39,61,79,42,303,225,61
 670,Floette,Fairy,,Flower Veil,Symbiosis,,54,45,47,75,98,52,371,120,130
 671,Florges,Fairy,,Flower Veil,Symbiosis,,78,65,68,112,154,75,552,45,276
 672,Skiddo,Grass,,Sap Sipper,Grass Pelt,,66,65,48,62,57,52,350,200,70
