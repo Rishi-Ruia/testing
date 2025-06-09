@@ -8,11 +8,11 @@ dex,name,type1,type2,ability1,ability2,hidden_ability,hp,attack,defense,sp_atk,s
 7,Squirtle,Water,,Torrent,Rain Dish,,44,48,65,50,64,43,314,45,63
 8,Wartortle,Water,,Torrent,Rain Dish,,59,63,80,65,80,58,405,45,142
 9,Blastoise,Water,,Torrent,Rain Dish,,79,83,100,85,105,78,530,45,239
-10,Caterpie,Bug,,Shield Dust,Run Away,,45,30,35,20,20,45,195,255,39
-11,Metapod,Bug,,Shed Skin,,,50,20,55,25,25,30,205,120,72
+10,Caterpie,Bug,,Run Away,Run Away,,45,30,35,20,20,45,195,255,39
+11,Metapod,Bug,,Run Away,,,50,20,55,25,25,30,205,120,72
 12,Butterfree,Bug,Flying,Compound Eyes,Tinted Lens,,60,45,50,90,80,70,395,45,178
-13,Weedle,Bug,Poison,Shield Dust,Run Away,,40,35,30,20,20,50,195,255,39
-14,Kakuna,Bug,Poison,Shed Skin,,,45,25,50,25,25,35,205,120,72
+13,Weedle,Bug,Poison,Run Away,Run Away,,40,35,30,20,20,50,195,255,39
+14,Kakuna,Bug,Poison,Run Away,,,45,25,50,25,25,35,205,120,72
 15,Beedrill,Bug,Poison,Swarm,Sniper,,65,90,40,45,80,75,395,45,178
 16,Pidgey,Normal,Flying,Keen Eye,Tangled Feet,Big Pecks,40,45,40,35,35,56,251,255,50
 17,Pidgeotto,Normal,Flying,Keen Eye,Tangled Feet,Big Pecks,63,60,55,50,50,71,349,120,122
@@ -25,29 +25,29 @@ dex,name,type1,type2,ability1,ability2,hidden_ability,hp,attack,defense,sp_atk,s
 24,Arbok,Poison,,Intimidate,Shed Skin,Unnerve,60,95,69,65,79,80,448,90,157
 25,Pikachu,Electric,,Static,Lightning Rod,,35,55,40,50,50,90,320,190,112
 26,Raichu,Electric,,Static,Lightning Rod,,60,90,55,90,80,110,485,75,243
-27,Sandshrew,Ground,,Sand Veil,Sand Rush,,50,75,85,20,30,40,300,255,60
-28,Sandslash,Ground,,Sand Veil,Sand Rush,,75,100,110,45,55,65,450,90,158
-29,Nidoran-f,Poison,,Poison Point,Rivalry,Hustle,55,47,52,40,40,41,275,235,55
-30,Nidorina,Poison,,Poison Point,Rivalry,Hustle,70,62,67,55,55,56,365,120,128
-31,Nidoqueen,Poison,Ground,Poison Point,Rivalry,Sheer Force,90,92,87,75,85,76,505,45,227
-32,Nidoran-m,Poison,,Poison Point,Rivalry,Hustle,46,57,40,40,40,50,273,235,55
-33,Nidorino,Poison,,Poison Point,Rivalry,Hustle,61,72,57,55,55,65,365,120,128
-34,Nidoking,Poison,Ground,Poison Point,Rivalry,Sheer Force,81,102,77,85,75,85,505,45,227
+27,Sandshrew,Ground,,Sand Rush,Sand Rush,,50,75,85,20,30,40,300,255,60
+28,Sandslash,Ground,,Sand Rush,Sand Rush,,75,100,110,45,55,65,450,90,158
+29,Nidoran-f,Poison,,Hustle,Rivalry,Hustle,55,47,52,40,40,41,275,235,55
+30,Nidorina,Poison,,Hustle,Rivalry,Hustle,70,62,67,55,55,56,365,120,128
+31,Nidoqueen,Poison,Ground,Hustle,Rivalry,Sheer Force,90,92,87,75,85,76,505,45,227
+32,Nidoran-m,Poison,,Hustle,Rivalry,Hustle,46,57,40,40,40,50,273,235,55
+33,Nidorino,Poison,,Hustle,Rivalry,Hustle,61,72,57,55,55,65,365,120,128
+34,Nidoking,Poison,Ground,Hustle,Rivalry,Sheer Force,81,102,77,85,75,85,505,45,227
 35,Clefairy,Fairy,,Cute Charm,Magic Guard,Friend Guard,70,45,48,60,65,35,323,150,113
-36,Clefable,Fairy,,Cute Charm,Magic Guard,Unaware,95,70,73,95,90,60,483,25,217
-37,Vulpix,Fire,,Flash Fire,Drought,,38,41,40,50,65,65,299,190,60
-38,Ninetales,Fire,,Flash Fire,Drought,,73,76,75,81,100,100,505,75,177
-39,Jigglypuff,Normal,Fairy,Cute Charm,Competitive,Friend Guard,115,45,20,45,25,20,270,170,95
-40,Wigglytuff,Normal,Fairy,Cute Charm,Competitive,Frisk,140,70,45,85,50,45,435,50,218
-41,Zubat,Poison,Flying,Inner Focus,Infiltrator,,40,45,35,30,40,55,245,255,49
-42,Golbat,Poison,Flying,Inner Focus,Infiltrator,,75,80,70,65,75,90,455,90,159
+36,Clefable,Fairy,,Unaware,Magic Guard,Unaware,95,70,73,95,90,60,483,25,217
+37,Vulpix,Fire,,Drought,Drought,,38,41,40,50,65,65,299,190,60
+38,Ninetales,Fire,,Drought,Drought,,73,76,75,81,100,100,505,75,177
+39,Jigglypuff,Normal,Fairy,Competitive,Competitive,Friend Guard,115,45,20,45,25,20,270,170,95
+40,Wigglytuff,Normal,Fairy,Competitive,Competitive,Frisk,140,70,45,85,50,45,435,50,218
+41,Zubat,Poison,Flying,Infiltrator,Infiltrator,,40,45,35,30,40,55,245,255,49
+42,Golbat,Poison,Flying,Infiltrator,Infiltrator,,75,80,70,65,75,90,455,90,159
 43,Oddish,Grass,Poison,Chlorophyll,Run Away,,45,50,55,75,65,30,320,255,64
 44,Gloom,Grass,Poison,Chlorophyll,Stench,,60,65,70,85,75,40,395,120,138
 45,Vileplume,Grass,Poison,Chlorophyll,Effect Spore,,75,80,85,110,90,50,490,45,221
 46,Paras,Bug,Grass,Effect Spore,Dry Skin,Damp,35,70,55,45,55,25,285,190,57
 47,Parasect,Bug,Grass,Effect Spore,Dry Skin,Damp,60,95,80,60,80,30,405,75,142
 48,Venonat,Bug,Poison,Compound Eyes,Tinted Lens,Run Away,60,55,50,40,55,45,305,190,61
-49,Venomoth,Bug,Poison,Shield Dust,Tinted Lens,Wonder Skin,70,65,60,90,75,90,450,75,158
+49,Venomoth,Bug,Poison,Tinted Lens,Tinted Lens,Wonder Skin,70,65,60,90,75,90,450,75,158
 50,Diglett,Ground,,Sand Veil,Arena Trap,Sand Force,10,55,25,35,45,95,265,255,53
 51,Dugtrio,Ground,,Sand Veil,Arena Trap,Sand Force,35,100,50,50,70,120,425,50,149
 52,Meowth,Normal,,Pickup,Technician,Unnerve,40,45,35,40,40,90,290,255,58
