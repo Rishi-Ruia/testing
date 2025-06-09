@@ -1,27 +1,28 @@
 import pandas as pd
+import requests
+# # 1) Load your spreadsheet
+# dfevo = pd.read_csv("assets/spreadsheets/evo.csv")
+# dfmons = pd.read_csv("assets/spreadsheets/pokemon data.csv")
+# local_names = set(dfevo["Pokemon"].str.lower().unique())
+# other = set(dfmons["name"].str.lower().unique())
+# # 2) Fetch the full list of species via HTTP
 
-# Load the full Pokémon species info
-poke_df = pd.read_csv("pokemon.csv")
-moves_df = pd.read_csv("final_pokemon_moves.csv")
+# # 3) Compute the difference
+# missing = sorted(other - local_names)
+# print("Missing Pokémon:", missing)
 
-# Step 1: Filter base forms from pokemon.csv
-base_forms = poke_df[poke_df["form"].isnull() | (poke_df["form"].str.strip() == "")]
-base_forms = base_forms.reset_index(drop=True)
 
-# Create a mapping: lowercase name → new Dex number based on row order
-base_forms["name_clean"] = base_forms["name"].str.lower()
-name_to_new_dex = {name: i + 1 for i, name in enumerate(base_forms["name_clean"])}
-
-# Step 2: Filter moves_df to only include base forms
-moves_df["name_clean"] = moves_df["Pokemon"].str.lower()
-filtered_moves = moves_df[moves_df["name_clean"].isin(name_to_new_dex.keys())].copy()
-
-# Step 3: Assign new Dex numbers
-filtered_moves["Dex"] = filtered_moves["name_clean"].map(name_to_new_dex)
-
-# Step 4: Sort by Dex and save
-final_df = filtered_moves.sort_values(by="Dex")
-final_df = final_df.drop(columns=["name_clean"])
-final_df.to_csv("final_pokemon_moves_cleaned.csv", index=False)
-
-print("✅ Cleaned file saved as final_pokemon_moves_cleaned.csv")
+# 1) Load your spreadsheet
+dfevo = pd.read_csv("assets/spreadsheets/evo.csv")
+dfmons = pd.read_csv("assets/spreadsheets/pokemon data.csv")
+local_names = list(dfevo["Pokemon"].str.lower())
+other_names = list(dfmons["name"].str.lower().unique())
+right_num = list(dfmons["dex"].unique())
+wrong_num = list(dfevo["#"].unique())
+# 2) Fetch the full list of species via HTTP
+order = list()
+# 3) Compute the difference
+for i in local_names:
+    index = other_names.index(i)+1
+    order.append(index)
+print(order)
