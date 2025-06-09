@@ -3,8 +3,8 @@ from random import randint, random
 from typing import Tuple
 
 # Creates Pokemon objects for both players
-def create_pokemon_objects() -> None:
-    pass
+# def create_pokemon_objects() -> None:
+#     pass
 
 # Pokemon "attacker" attacks Pokemon "victim" with Move "move" and returns a string that summarizes the attack
 def attack(attacker: Pokemon, move: Move, victim: Pokemon, special: bool) -> str:
@@ -38,6 +38,7 @@ def determine_effectiveness(move: Move, victim: Pokemon) -> str:
 
     return effectiveness
 
+# Takes the attacker Pokemon and the move it does and returns the damage modification and a message if there is a critical hit
 def get_damage_mod(attacker: Pokemon, move: Move,) -> Tuple[float, str]:
     damage_mod: float = 1.0
     crit_message: str = ""
@@ -52,8 +53,11 @@ def get_damage_mod(attacker: Pokemon, move: Move,) -> Tuple[float, str]:
     return damage_mod, crit_message
 
 # Helper method to calculate the amount of damage a move will do to a pokemon
-def damage_calc(attacker: Pokemon, move: Move, victim: Pokemon, special: bool, random: float) -> int:
+def damage_calc(attacker: Pokemon, move: Move, victim: Pokemon, special: bool, random: float) ->int:
     if not special:
         return (int) ((((((((2 * attacker.level) / 5) + 2) * attacker.atk * move.power) / victim.defense) / 50) + 2) * Move.effective(move, victim) * random)
     else:
         return (int) ((((((((2 * attacker.level) / 5) + 2) * attacker.spatk * move.power) / victim.spdef) / 50) + 2) * Move.effective(move, victim) * random) 
+    
+if __name__ == "__main__":
+    print("Running game...")
