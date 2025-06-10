@@ -7,7 +7,10 @@ class pokemon:
     dfmons = pd.read_csv("assets/spreadsheets/pokemon data.csv")
     dfexp = pd.read_csv("assets/spreadsheets/exp chart.csv")
     def __init__(self, dex:int):
-        self.name = 
+        dfevo = pd.read_csv("assets/spreadsheets/evo.csv")
+        dfmons = pd.read_csv("assets/spreadsheets/pokemon data.csv")
+        dfexp = pd.read_csv("assets/spreadsheets/exp chart.csv")
+        self.name = dfmons["name"].str[dex]
         self.dex = dex
         self.hp = math.floor((2* hp +31 + random.randint(0,63))*level)/100+5
         self.attack = math.floor((2*attack+random.randint(0,63))*level/100+5)
